@@ -1,13 +1,14 @@
-import { useState } from "react";
-import WeatherList from "./Weather/WeatherList";
-import api from "./api";
+import "./style.scss"
+import SingleWeather from "./WeatherList.tsx/SingleWeather";
+import WeatherList from "./WeatherList.tsx/WeatherList";
+import { Outlet} from "react-router-dom";
 
 export default function App() {
 
   return (
     <>
     <WeatherList />
-    <h1>Hello</h1>
+
     </>
   )
 }
