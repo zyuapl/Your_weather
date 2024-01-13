@@ -22,7 +22,7 @@ export default function SingleWeather({}: IProps): React.ReactElement | null {
     });
     }, [id_stacji]);
 
-    if (!location) return <>Wczytuję...</>;
+    if (!location) return <div className="single"><h1>Wczytuję...</h1></div>;
     
     return (
         <div className="single"><h1>{location.stacja}</h1>
